@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="top-navbar">
+            <div class="top-left-nav">
+                <div><img src="./imgs/koha-green-logo.svg" alt="Logo 1"></div>
+                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                <p><i class="fa-solid fa-list-ul"></i> სიები</p>
+       
+            </div>
+            <div class="top-right-nav">
+                <ul class="top-nav-items"></ul>
+                    <li><i class="fa-solid fa-globe"></i> ენა</li>
+                    <li><i class="fa-solid fa-user"></i> შესვლა</li>
+                    <li><i class="fa-solid fa-clock-rotate-left"></i> ძიების ისტორია</li>
+                </ul>
+            </div>
+        </nav>
+
+            <nav class="bottom-navbar">
+                <div class="bottom-menu">
+                    <ul class="bottom-menu-items">
+                        <li>გაფართოებული ძიება</li>
+                        <li>ავტორიტ. ცნობების ძიება</li>
+                        <li> ბიბლიოთეკები</li>
+                        <li>წინადადებები ლიტერატ. შესყიდვაზე</li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <select id="search-category">
+                        <option value="library">დახარისხება</option>
+                        <option value="books">Books</option>
+                        <option value="articles">Articles</option>
+                    </select>
+                    <input type="text" id="search-input" placeholder="საკვანძო სიტყვა..">
+                    <button id="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            
+            </nav>
+    </header>
+
+    <div class="about-contant">
+        <h1>ეროვნული სამეცნიერო ბიბლიოთეკა</h1>
+        <h3>კატალოგი</h3>
+        <p>
+            ეროვნული სამეცნიერო ბიბლიოთეკის ელექტრონული კატალოგი 
+            ამჟამად მოიცავს ჩვენი 5 მილიონიანი ფონდის მხოლოდ მცირე ნაწილს.
+            მიმდინარეობს მისი შევსება. ამიტომ, თუ თქვენთვის სასურველი ნაშრომი 
+            არ მოიძებნა კატალოგში, მიმართეთ ბიბლიოთეკარებს, რომლებიც დაგეხმარებიან
+            თქვენის საჭირო ინფორმაციის შერჩევასა და მოძიებაში.
+        </p>
+    </div>
+
+
+
+    <!-- slider  -->
+    <h3 class="new-books-title">ახალი წიგნები ბიბლიოთეკაში</h3>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+            <div class="swiper-slide" style="background-image: url('./imgs/book.jpg');"><h3 class="new-book-title">წიგნი წიგნი</h3></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div style="margin-top: 30px !important;" class="swiper-pagination"></div>
+    </div>
+    
+
+    <div class="library">
+        <h3>ბიბლიოთეკა და KOHA </h3>
+        <p>ბიბლიოთეკა რომ კოჰას იყენებს ის ტექსტი</p>
+        <div class="logos">
+            <img src="./imgs/sc-logo.png" alt="">
+            <img src="./imgs/koha-green-logo.svg" alt="">
+        </div>
+    </div>
+
+
+    <h3 class="contact-section-heading">საკონტაქტო ინფორმაცია</h3>
+    <div class="contact-section">
+        
+        <div class="contact-list">
+            <div class="contact-item">
+               <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                    <h5>ტელეფონი</h5>
+                    <a href="tel:+995599999999">+995 599 999 999</a>
+                </div>
+            </div>
+            <div class="contact-item">
+               <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                    <h5>ტელეფონი</h5>
+                    <a href="tel:0322599999999">032 2 599 999 999</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h5>ელ-ფოსტა</h5>
+                    <a href="mailto:abon@sciencelib.ge">abon@sciencelib.ge</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h5>მისამართი</h5>
+                    <a href="#">მ. ალექსიძის II შესახვევი, #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="opening-hours">
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <h5>სამუშაო საათები</h5> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ორშაბათი</td>
+                        <td>08:00 - 16:00</td>
+                    </tr>
+                    <tr class="active">
+                        <td>სამშაბათი</td>
+                        <td>08:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>ოთხშაბათი</td>
+                        <td>09:30 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>ხუთშაბათი</td>
+                        <td>08:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>პარასკევი</td>
+                        <td>10:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <td>შაბათი</td>
+                        <td>08:00 - 13:00</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>კვირა</td>
+                        <td>დაკეტილია</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.2049848614943!2d44.78079907607637!3d41.71609537126002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d55e2f7b21%3A0xe7dc6e8317b8380!2z4YOU4YOg4YOd4YOV4YOc4YOj4YOa4YOYIOGDoeGDkOGDm-GDlOGDquGDnOGDmOGDlOGDoOGDnSDhg5Hhg5jhg5Hhg5rhg5jhg53hg5fhg5Thg5nhg5A!5e0!3m2!1ska!2sge!4v1740618879115!5m2!1ska!2sge" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+
+        <div class="copyright">
+            <p>&COPY; 2025 ეროვნული სამეცნიერო ბიბლიოთეკა. ყველა უფლება დაცულია.</p>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
